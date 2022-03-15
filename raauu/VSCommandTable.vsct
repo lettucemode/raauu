@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="raauu">
+    <Buttons>
+      <Button guid="raauu" id="raauuCommand" type="Button">
+        <!--<Icon guid="ImageCatalogGuid" id="StatusInformation" />-->
+        <!--<CommandFlag>IconIsMoniker</CommandFlag>-->
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <LocCanonicalName>.raauu.raauuCommand</LocCanonicalName>
+          <ButtonText>Randomize and Add Useless Usings</ButtonText>
+          <CommandName>Randomize and Add Useless Usings</CommandName>
+          <CanonicalName>Randomize and Add Useless Usings</CanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <CommandPlacements>
+      <!-- Edit -> IntelliSense. I would like this to appear above the line so it is in the same group as 
+	       "Sort Usings" and "Remove and Sort Usings" but I can't find the group ID for that - my guess is
+		   it's a C# + Intellisense specific menu group that MS hasn't published.-->
+	  <CommandPlacement guid="raauu" id="raauuCommand" priority="0x0001">
+		  <Parent guid="guidStdEditor" id="IDG_VS_EDITOR_INTELLISENSE_CMDS" />
+	  </CommandPlacement>
+	  <!-- Right-click in a code window. -->
+	  <CommandPlacement guid="raauu" id="raauuCommand" priority="0xF000">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_CODEWIN_LANGUAGE" />
+	  </CommandPlacement>
+  </CommandPlacements>
+
+  <!-- Ctrl + R, Ctrl + U -->
+  <KeyBindings>
+    <KeyBinding guid="raauu" id="raauuCommand" editor="guidVSStd97"
+		key1="r" mod1="CONTROL" key2="u" mod2="CONTROL" />
+  </KeyBindings>
+
+  <VisibilityConstraints>
+    <VisibilityItem guid="raauu" id="raauuCommand" context="AutoLoad" />
+  </VisibilityConstraints>
+
+  <Symbols>
+    <GuidSymbol name="raauu" value="{19c81aa0-d5b3-4ade-b931-2ed9ef16b359}">
+      <IDSymbol name="raauuCommand" value="0x0100" />
+    </GuidSymbol>
+    <GuidSymbol name="AutoLoad" value="{f4e31bf9-765a-4be5-885e-548d1fec6897}" />
+  </Symbols>
+</CommandTable>
