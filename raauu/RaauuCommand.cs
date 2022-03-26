@@ -75,7 +75,8 @@ namespace raauu
                 selection.SelectLine();
             }
 
-            // remove all using statements in the block we found and add them to the list
+            // assume we're at the start of a block of using statements
+            // remove all using statements and add them to the list
             dte.UndoContext.Open("raauu");
             while (selection.Text.Contains("using"))
             {
