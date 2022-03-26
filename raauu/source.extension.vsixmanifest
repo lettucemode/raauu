@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="raauu.67684396-6aac-41fb-bf2e-2df8ffae7903" Version="2.0" Language="en-US" Publisher="lettucemode" />
         <DisplayName>Randomize and Add Useless Usings</DisplayName>
-        <Description xml:space="preserve">Randomize and Add Useless Usings is a Visual Studio IDE (not Code) extension that does the opposite of the "Remove and Sort Usings" command in C# code contexts.</Description>
+        <Description xml:space="preserve">Randomize and Add Useless Usings is a Visual Studio extension that does the opposite of the "Remove and Sort Usings" command in C# code contexts.</Description>
         <MoreInfo>https://github.com/lettucemode/raauu</MoreInfo>
         <ReleaseNotes>Updated for Visual Studio 2022</ReleaseNotes>
         <Icon>Icon.png</Icon>
