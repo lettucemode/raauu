@@ -1,8 +1,11 @@
-﻿using EnvDTE;
-using Microsoft;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.ComponentModel.Composition.Caching.AttributedModel;
+using Microsoft.VisualStudio.ComponentModelHost;
 using System.Reflection;
+using System.Linq;
+using Microsoft;
+using EnvDTE;
+using System.Collections.Generic;
+using Microsoft.TeamFoundation.Client.Internal;
 
 namespace raauu
 {

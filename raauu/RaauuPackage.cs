@@ -1,9 +1,14 @@
-﻿global using Community.VisualStudio.Toolkit;
+﻿global using Task = System.Threading.Tasks.Task;
+using Microsoft.VisualStudio.Services.Integration.Performance;
+using Microsoft.VisualStudio.Services.Integration.Performance;
 global using Microsoft.VisualStudio.Shell;
 global using System;
-global using Task = System.Threading.Tasks.Task;
-using System.Runtime.InteropServices;
+global using Community.VisualStudio.Toolkit;
+using Microsoft.CodeAnalysis;
+using System.Runtime.CompilerServices;
 using System.Threading;
+using Microsoft.CodeAnalysis;
+using System.Runtime.InteropServices;
 
 namespace raauu
 {
